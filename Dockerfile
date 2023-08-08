@@ -5,8 +5,6 @@ USER root
 WORKDIR /home/node/packages/cli
 ENTRYPOINT []
 
-RUN npm install -g puppeteer handlebars
-
 COPY ./entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 CMD ["/entrypoint.sh"]
